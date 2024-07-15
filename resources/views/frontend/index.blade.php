@@ -172,15 +172,14 @@ Home
                 <h1>Dernières nouveautés du blog</h1>
             </div>
             <div class="row g-5 justify-content-center">
-                <div class="col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="blog-item position-relative bg-light rounded">
-                        <img src="{{ asset('frontend/img/blog-2.jpg') }}" class="img-fluid w-100 rounded-top" alt="">
-                        <span class="position-absolute px-4 py-3  text-white rounded"
-                            style="top: -28px; right: 20px; background-color:#2e2ea3a8 ;">La Cybersécurité</span>
+                @foreach ($blogs as $blog)
+                <div class="col-lg-6 col-xl-4 wow fadeIn"  data-wow-delay=".3s">
+                    <div class="blog-item position-relative bg-light rounded" >
+                        <img src="{{ Storage::url($blog->image) }}" class="img-fluid w-100 rounded-top" alt="">
                         <div class="blog-btn d-flex justify-content-between position-relative px-3"
                             style="margin-top: -75px;">
                             <div class="blog-icon btn  px-3 rounded-pill my-auto" style="background-color: #2e2ea3;">
-                                <a href="blogdetails.html" class="btn text-white">Read More</a>
+                                <a href="{{ route('Blogdetails',['id'=>$blog->id]) }}" class="btn text-white">Read More</a>
                             </div>
                             <div class="blog-btn-icon btn  px-4 py-3 rounded-pill " style="background-color: #2e2ea3;">
                                 <div class="blog-icon-1">
@@ -197,8 +196,8 @@ Home
                             <img src="{{ asset('frontend/img/admin1.png') }}" class="img-fluid rounded-circle border border-4 border-white mb-3"
                                 alt="" >
                             <h5 class="">By Rynad GuardNet</h5>
-                            <span class=""style="color: #2e2ea3;">24 March 2023</span>
-                            <p class="py-2">La Cybersécurité : Un Enjeu Crucial dans le Monde Numérique Actuel</p>
+                            <span class=""style="color: #2e2ea3;">{{ $blog->created_at }} </span>
+                            <p class="py-2">{{ $blog->main_title }}</p>
                         </div>
                         <div
                             class="blog-coment d-flex justify-content-between px-4 py-2 border  rounded-bottom" style="background-color:#2e2ea3 ;">
@@ -209,6 +208,7 @@ Home
                         </div>
                     </div>
                 </div>
+                @endforeach
 
             </div>
         </div>

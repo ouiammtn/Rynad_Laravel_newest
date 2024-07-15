@@ -116,14 +116,16 @@
                         <div class="row g-3">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8 wow fadeIn">
+                                <form action="" method="post">
                                 <div class="p-3 rounded contact-form">
                                     <div class="mb-3">
-                                        <input type="email" class="form-control border-0 py-2" placeholder="Votre Email">
+                                        <input type="email" name="email" id="email" class="form-control border-0 py-2" placeholder="Votre Email">
                                     </div>
                                     <div class="text-center">
-                                        <a class="btn text-white py-2 px-4" href="mailto:connect@rynadguardnet.com" style="background-color: #2e2ea3;">Envoyer un message</a>
+                                        <button type="submit" class="btn text-white py-2 px-4"  style="background-color: #2e2ea3;">Envoyer un message</button>
                                     </div>
                                 </div>
+                            </form>
                             </div>
                         </div>
                     </div>
@@ -133,7 +135,7 @@
         <hr class="text-light mt-5 mb-4">
         <div class="row">
             <div class="col-md-12 text-center">
-                <span class="text-white"><a href="#" style="color:#5066a3ba;"><i class="fas fa-copyright me-2" style="color:#5066a3ba;"></i>Rynad GuardNet</a>, All rights reserved.</span>
+                <span class="text-white"><a href="#" style="color:#5066a3ba;"><i class="fas fa-copyright me-2" style="color:#5066a3ba;"></i>Rynad GuardNet</a>, All rights reserved {{ date('Y') }}.</span>
             </div>
         </div>
     </div>

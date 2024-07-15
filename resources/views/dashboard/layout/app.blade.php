@@ -15,16 +15,11 @@
   <link rel="stylesheet" href="{{ asset('dashboard/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css') }}">
   <!-- iCheck -->
   <link rel="stylesheet" href="{{ asset('dashboard/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="{{ asset('dashboard/plugins/jqvmap/jqvmap.min.css') }}">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('dashboard/dist/css/adminlte.min.css') }}">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ asset('dashboard/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{ asset('dashboard/plugins/daterangepicker/daterangepicker.css') }}">
-  <!-- summernote -->
-  <link rel="stylesheet" href="{{ asset('dashboard/plugins/summernote/summernote-bs4.min.css') }}">
+
+
 
   <!-- Scripts -->
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -140,13 +135,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="pages/charts/chartjs.html" class="nav-link">
+                        <a href="{{ route('View_Blogs') }}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Blogs</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="pages/charts/flot.html" class="nav-link">
+                        <a href="{{ route('add_blog') }}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
                           <p>Add Blog</p>
                         </a>
@@ -183,7 +178,7 @@
 
 
 <footer class="main-footer fixed-bottom">
-    <strong>Copyright &copy; 2024 <span>Rynad GuardNet</span>.</strong>
+    <strong>Copyright &copy; {{ date('Y') }} <span>Rynad GuardNet</span>.</strong>
     All rights reserved.
 
   </footer>
@@ -206,24 +201,9 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<!-- ChartJS -->
-<script src="{{ asset('dashboard/plugins/chart.js/Chart.min.js') }}"></script>
-<!-- Sparkline -->
-<script src="{{ asset('dashboard/plugins/sparklines/sparkline.js') }}"></script>
-<!-- JQVMap -->
-<script src="{{ asset('dashboard/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
-<script src="{{ asset('dashboard/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{ asset('dashboard/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
-<!-- daterangepicker -->
-<script src="{{ asset('dashboard/plugins/moment/moment.min.js') }}"></script>
-<script src="{{ asset('dashboard/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="{{ asset('dashboard/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
-<!-- Summernote -->
-<script src="{{ asset('dashboard/plugins/summernote/summernote-bs4.min.js') }}"></script>
-<!-- overlayScrollbars -->
-<script src="{{ asset('dashboard/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+
 <!-- AdminLTE App -->
 <script src="{{ asset('dashboard/dist/js/adminlte.js') }}"></script>
 <!-- AdminLTE for demo purposes -->

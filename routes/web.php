@@ -14,15 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('frontend.comingsoon');
 });
 
 
 //blog_routs
 Route::get('/blog','BLOGController@index')->name('Blog');
+Route::get('/blogdetails/{id}','BLOGController@blogdetails')->name('Blogdetails');
+Route::get('/Rynad_Home','BLOGController@Home_page')->name('home');
 
 //Contact_routs
 Route::get('/Contact','CONTACTController@index')->name('contact');
+
 
 //politique
 Route::get('/confidentialité','POLITIQUE@index')->name('confidentialité');
@@ -39,5 +42,12 @@ Route::group([
 ] ,function(){
     //admin_routs
 Route::get('/','ADMINController@index')->name('admin_home');
+//blog
+Route::get('/addblog','BLOGController@add_blog')->name('add_blog');
+Route::post('/storeblog','BLOGController@store')->name('store_blog');
+Route::get('/ViewBlogs','BLOGController@blogs_Admin')->name('View_Blogs');
+Route::get('/editblog/{id}','BLOGController@show')->name('show_editblog');
+Route::put('/updateblog/{id}','BLOGController@update')->name('update_editblog');
+Route::delete('/deleteblog/{id}','BLOGController@destroy')->name('delete_blog');
 
 });//adminauth
