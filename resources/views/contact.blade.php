@@ -28,28 +28,18 @@ Home
                         </div>
                         <div class="col-lg-1  "></div>
                         <div class="col-lg-4  m-0 ">
-                            <form action="{{ route('contact.store') }}" method="POST" class="row m-0 g-3  text-dark glass-form">
+                            <form action="{{ route('contact.store') }}" method="POST">
                                 @csrf
-                                <div class="col-lg-12   p-1 align-content-center " style=" background-color:#2e2ea3a8 ;">
-                                    <h5 class="text-white text-center p-2"> Inscrivez-vous dès maintenant !</h5>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" required>
                                 </div>
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" name="f_name" placeholder="Prénom" id="f_name" required>
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" class="form-control" name="l_name" placeholder="Nom" id="l_name" required>
-                                </div>
-                                <div class="col-lg-12">
-                                    <input type="text" class="form-control" name="WHATSAPP" id="WHATSAPP" placeholder="numéro de téléphone" required>
-                                </div>
-                                <div class="col-lg-12">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email@xyz.com" required>
+                                <div>
+                                    <label for="name">Name:</label>
+                                    <input type="text" name="name" id="name" required>
                                 </div>
                                 <!-- Add other input fields as necessary -->
-                                <div class="col-12 mb-2 ">
-                                    <button class="btn text-white" style="background-color: #2e2ea3;" type="submit">Soumettre le Formulaire</button>
-                                </div>
-
+                                <button type="submit">Submit</button>
                             </form>
 
                         </div>
@@ -163,47 +153,21 @@ Home
             <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                 <h1>Dernières nouveautés du blog</h1>
             </div>
-            <div class="row g-5 justify-content-center">
-                @foreach ($blogs as $blog)
-                <div class="col-lg-6 col-xl-4 wow fadeIn"  data-wow-delay=".3s">
-                    <div class="blog-item position-relative bg-light rounded" >
-                        <img src="{{ Storage::url($blog->image) }}" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="blog-btn d-flex justify-content-between position-relative px-3"
-                            style="margin-top: -75px;">
-                            <div class="blog-icon btn  px-3 rounded-pill my-auto" style="background-color: #2e2ea3;">
-                                <a href="{{ route('Blogdetails',['id'=>$blog->id]) }}" class="btn text-white">Read More</a>
-                            </div>
-                            <div class="blog-btn-icon btn  px-4 py-3 rounded-pill " style="background-color: #2e2ea3;">
-                                <div class="blog-icon-1">
-                                    <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3" ></i></p>
-                                </div>
-                                <div class="blog-icon-2">
-                                    <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
-                                    <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
-                            <img src="{{ asset('frontend/img/admin1.png') }}" class="img-fluid rounded-circle border border-4 border-white mb-3"
-                                alt="" >
-                            <h5 class="">By Rynad GuardNet</h5>
-                            <span class=""style="color: #2e2ea3;">{{ $blog->created_at }} </span>
-                            <p class="py-2">{{ $blog->main_title }}</p>
-                        </div>
-                        <div
-                            class="blog-coment d-flex justify-content-between px-4 py-2 border  rounded-bottom" style="background-color:#2e2ea3 ;">
-                            <a href="" class="text-white"><small><i class="fas fa-share me-2 "style="color: #ffffff;"></i>0
-                                    Share</small></a>
-                            <a href="" class="text-white"><small><i class="fa fa-comments me-2 "style="color: #ffffff;"></i>0
-                                    Comments</small></a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-
-            </div>
+            
         </div>
     </div>
     <!-- Blog End -->
 @endsection
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>

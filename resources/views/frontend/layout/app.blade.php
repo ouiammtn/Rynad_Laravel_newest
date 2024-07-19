@@ -55,7 +55,7 @@
     <div class="container-fluid m-0 navbar-dark  text-dark bg-white navbarr fixed-top ">
         <div class="container  ">
             <nav class="navbar navbar-dark navbar-expand-lg py-0 ">
-                <a href="/" class="navbar-brand d-flex">
+                <a href="{{ route('home') }}" class="navbar-brand d-flex">
                     <img src="{{ asset('frontend/img/rynadLOGO2.png') }}" width="50px" height="50px" alt="">
                     <h4 class="text-dark fw-bold d-block ms-1 align-content-center h-50 my-auto">Rynad GuardNet</h4>
                 </a>
@@ -65,7 +65,7 @@
                 </button>
                 <div class="collapse navbar-collapse  " style="float: right;" id="navbarCollapse">
                     <div class="navbar-nav ms-auto  p-0 ">
-                        <a href="/" class="nav-item nav-link active text-secondary">Accueil</a>
+                        <a href="{{ route('home') }}" class="nav-item nav-link active text-secondary">Accueil</a>
                         <a href="{{ route('Blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
@@ -85,7 +85,7 @@
 
             <div class="col-lg-3 col-md-6">
                 <div class="mt-4 d-flex flex-column short-link">
-                    <a href="/" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Accueil</a>
+                    <a href="{{ route('home') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Accueil</a>
                     <a href="{{ route('Blog') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Blog</a>
                     <a href="{{ route('contact') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Contact</a>
                     <a href="{{ route('confidentialité') }}" class="mb-2 text-white"><i class="fas fa-angle-right me-2" style="color:#5066a3ba;"></i>Politique de confidentialité</a>
@@ -116,11 +116,13 @@
                         <div class="row g-3">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-8 wow fadeIn">
-                                <form action="" method="post">
+                                <form action="{{ route('contact.store') }}" method="Post">
+                                    @csrf
                                 <div class="p-3 rounded contact-form">
                                     <div class="mb-3">
                                         <input type="email" name="email" id="email" class="form-control border-0 py-2" placeholder="Votre Email">
                                     </div>
+
                                     <div class="text-center">
                                         <button type="submit" class="btn text-white py-2 px-4"  style="background-color: #2e2ea3;">Envoyer un message</button>
                                     </div>

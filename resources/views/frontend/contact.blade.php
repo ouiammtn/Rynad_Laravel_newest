@@ -76,15 +76,16 @@ Contact
                         </div>
                     </div>
                     <div class=" col-lg-6 mx-auto">
-                        <form action="" method="post" >
+                        <form action="{{ route('contact.store') }}" method="POST" >
+                            @csrf
                         <div class="mb-2">
-                            <input type="text" class="form-control border-0 py-3" name="Votre_Nom" placeholder="Votre Nom">
+                            <input type="text" class="form-control border-0 py-3" name="f_name" id="f_name" placeholder="Votre Nom">
                         </div>
                         <div class="mb-2">
-                            <input type="email" class="form-control border-0 py-3" name="Votre_Email" placeholder="Votre Email">
+                            <input type="email" class="form-control border-0 py-3" name="email" id="email" placeholder="Votre Email">
                         </div>
                         <div class="mb-2">
-                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" name="Message" placeholder="Message"></textarea>
+                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" name="message" id="message" placeholder="Message"></textarea>
                         </div>
                         <div class="text-center mx-auto w-50 ">
                             <button class="btn text-white py-3 px-5 " style="background-color:#2e2ea3 ; " type="submit" value="Envoyer un message">Envoyer un message</button>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +14,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('frontend.comingsoon');
+// });
+
+use App\Http\Controllers\BrevoController;
+
 Route::get('/', function () {
     return view('frontend.comingsoon');
 });
 
-
+Route::post('/', [BrevoController::class, 'store'])->name('contact.store');
 //blog_routs
 Route::get('/blog','BLOGController@index')->name('Blog');
 Route::get('/blogdetails/{id}','BLOGController@blogdetails')->name('Blogdetails');
 Route::get('/Rynad_Home','BLOGController@Home_page')->name('home');
+Route::post('/Rynad_Home','BLOGController@Home_page')->name('home');
+
 
 //Contact_routs
 Route::get('/Contact','CONTACTController@index')->name('contact');
