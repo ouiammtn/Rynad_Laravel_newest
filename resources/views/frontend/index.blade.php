@@ -104,11 +104,14 @@ Home
     <div class="container-fluid py-5 mt-5 statistac">
         <div class="container pt-5 statistiques text-center">
             <div class="row">
-                <div class="col-lg-3 wow fadeIn stat" data-wow-delay="0.1s">
-                    <div class="d-flex counter text-center w-50 mx-auto">
-                        <h1 class="me-2 text-white  counter-value">7</h1><span><h1 class="text-white ">ans</h1></span> <br>
+                <div class="col-lg-3 wow fadeIn stat " data-wow-delay="0.1s">
+                    <div class="d-flex counter text-center   annees">
+                        <h1 class="me-2 ms-3 text-white  counter-value">7</h1><span><h1 class="text-white ">ANNÉES</h1></span> <br>
                     </div>
-                    <h5 class="text-white mt-1 w-75">DES ANNÉES D'EXPERTISE ET DE COMPÉTENCES ÉPROUVÉES.</h5>
+                    <div class=" w-75">
+                       <h5 class="text-white mt-1"> D'EXPERTISE ET DE COMPÉTENCES ÉPROUVÉES.</h5>
+                    </div>
+
                 </div>
                 <div class="col-lg-3 wow fadeIn stat" data-wow-delay=".3s">
                     <div class="d-flex counter w-50 mx-auto">

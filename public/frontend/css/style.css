@@ -39,6 +39,14 @@
         .coming_content{
             padding-top:200px ;
          }
+         .statistiques{
+            margin-left: 13%;
+            position: relative;
+        z-index: 1;
+        }
+        .annees{
+            margin-left: 15%;
+        }
 
 
 }
@@ -49,7 +57,7 @@
 }
 .head1{
 
-    background-image: url('../img/headerbg2.jpg');
+    background-image: url('../img/headerbg.png');
     background-size: cover;
     background-position: center;
 
@@ -101,13 +109,16 @@
         margin-left: 5%;
     }
     .statistiques{
-        margin-left: 9%;
+
         position: relative;
     z-index: 1;
     }
     i{
         color:white;
     }
+
+
+
 .btn-square {
     width: 38px;
     height: 38px;
