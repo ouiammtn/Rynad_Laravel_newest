@@ -98,14 +98,14 @@
 
                 <div class="text-white mt-4 d-flex flex-column contact-link mt-2">
                     <a href="#" class="pb-3 text-white border-bottom border-primary"><i class="fas fa-map-marker-alt me-2" style="color:#5066a3ba;"></i> ETG 3 APPT 3, BD MASSIRA, N 6 Rue 6 Octobre, Casablanca 20250</a>
-                    <a href="#" class="py-3 text-white border-bottom border-primary"><i class="fas fa-phone-alt me-2" style="color:#5066a3ba;"></i>+212 700 111 518</a>
+                    <a href="#" class="py-3 text-white border-bottom border-primary"><i class="fas fa-phone-alt me-2" style="color:#5066a3ba;"></i>+212 520 282 039</a>
                     <a href="mailto:connect@rynadguardnet.com" class="py-3 text-white border-bottom border-primary"><i class="fas fa-envelope me-2" style="color:#5066a3ba;"></i> connect@rynadguardnet.com</a>
                 </div>
 
                 <div class="d-flex icons hightech-link mt-2">
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fa fa-envelope" style="color:#5066a3ba;"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram" style="color:#5066a3ba;"></i></a>
-                    <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in" style="color:#5066a3ba;"></i></a>
+                    <a href="mailto:connect@rynadguardnet.com" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fa fa-envelope" style="color:#5066a3ba;"></i></a>
+                    <a href="https://www.instagram.com/rynad.guardnet/" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram" style="color:#5066a3ba;"></i></a>
+                    <a href="https://www.linkedin.com/company/rynad-guardnet/about/" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i class="fab fa-linkedin-in" style="color:#5066a3ba;"></i></a>
                 </div>
 
             </div>
@@ -124,7 +124,7 @@
                                     </div>
 
                                     <div class="text-center">
-                                        <button type="submit" class="btn text-white py-2 px-4"  style="background-color: #2e2ea3;">Envoyer un message</button>
+                                        <button type="submit" class="btn text-white py-2 px-4"  style="background-color: #2e2ea3;">Envoyer</button>
                                     </div>
                                 </div>
                             </form>

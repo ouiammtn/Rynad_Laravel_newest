@@ -10,7 +10,7 @@ Contact
         <div class ="row">
             <div class="col-lg-12 mt-5">
                 <div class="row g-3">
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay=".3s">
                         <div class="card bg-light p-3 rounded">
                             <div class="d-flex">
                                 <div class=" btn-square rounded-circle p-2" style=" background-color:#2e2ea3  ; ">
@@ -18,13 +18,13 @@ Contact
                                 </div>
                                 <div class="ms-3">
                                     <h4  style="color:#2e2ea3 ;">Adresse</h4>
-                                    <a href="https://maps.app.goo.gl/MLSHkTFVMctZF8Gk8" target="_blank" class="h6"> ETG 3 APPT 3, BD MASSIRA</a>
+                                    <a href="https://maps.app.goo.gl/MLSHkTFVMctZF8Gk8" target="_blank" class="h6"> ETG 3 APPT 3, BD MASSIRA, CASABLANCA MAROC</a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class=" col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class=" col-lg-3 wow fadeIn" data-wow-delay=".5s">
                         <div class="card bg-light p-3 rounded">
                             <div class="d-flex">
                                 <div class=" btn-square rounded-circle p-2" style=" background-color:#2e2ea3  ;">
@@ -32,7 +32,7 @@ Contact
                                 </div>
                                 <div class="ms-3">
                                     <h4  style="color:#2e2ea3 ;">Appelez-nous</h4>
-                                    <a class="h6" href="tel:+212 700 111 518" target="_blank">+212 700 111 518</a>
+                                    <a class="h6" href="tel:+212 520 282 039" target="_blank">+212 520 282 039</a>
                                 </div>
                             </div>
 
